@@ -6,7 +6,18 @@ package community;
  * @file   : Community1.java
  * @story  : 
 */
-public class Community {
+/**
+ * back:뒤로가기
+ * contents:내용
+ * simbol:심볼
+ * communityBack:커뮤니티화면으로 이동
+ * login:로그인
+ * WorkRoom:워크룸
+ * people:사람수
+*/
+public class CommunityBean {
+private String back, contents, simbol,communityBack,login,workRoom,people;
+	
 public String getCommunityBack() {
 		return communityBack;
 	}
@@ -23,15 +34,21 @@ public String getCommunityBack() {
 		this.login = login;
 	}
 
-	public String getLanguage() {
-		return language;
+public String getWorkRoom() {
+		return workRoom;
 	}
 
-	public void setLanguage(String language) {
-		this.language = language;
+	public void setWorkRoom(String workRoom) {
+		this.workRoom = workRoom;
 	}
 
-private String back, contents, simbol,communityBack,login,language;
+public String getPeople() {
+	return people;
+}
+
+public void setPeople(String people) {
+	this.people = people;
+}
 
 public String getBack() {
 	return back;
